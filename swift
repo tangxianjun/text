@@ -19,3 +19,67 @@ Optional 是一个含有两种情况的枚举，None 和 Some(T)，用来表示�
 当你声明一个可选变量或者可选属性的时候没有提供初始值，它的值会默认为 nil。
 
 可选项遵照 LogicValue 协议，因此可以出现在布尔环境中。在这种情况下，如果可选类型T?包含类型为T的任何值（也就是说它的值是 Optional.Some(T) ），这个可选类型等于 true，反之为 false。
+
+
+
+import CocoOptional("Hello, Swift!")
+
+
+
+import Cocoa
+
+var myString:String!
+
+myString = "Hello, Swift!"
+
+if myString != nil {
+   print(myString)
+}else{
+   print("myString 值为 nil")
+}
+
+输出结果
+输出姐.
+var myString:String? = nil
+
+if myString != nil {
+    print(myString)
+}else{
+    print("字符串为 nil")
+}
+
+以上代码输出结果
+字符串为 nil
+
+
+import Cocoa
+
+var myString:String?
+
+myString = "Hello, Swift!"
+
+if myString != nil {
+   print(myString)
+}else{
+   print("myString 值为 nil")
+}
+
+以上输出结果
+Optional("Hello, Swift!")
+
+
+
+import Cocoa
+
+var myString:String!
+
+myString = "Hello, Swift!"
+
+if myString != nil {
+   print(myString)
+}else{
+   print("myString 值为 nil")
+}
+
+输出结果
+Hello, Swift!
