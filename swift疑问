@@ -28,3 +28,26 @@ print()
 
 输出结果
 0 1 2 3 4 5 6 7 8 9 10 
+
+
+import Cocoa
+
+func vari<N>(members: N...){
+    for i in members {
+        print(i)
+    }
+}
+vari(members: 4,3,5)
+vari(members: 4.5, 3.1, 5.6)
+vari(members: "Google", "Baidu", "Runoob")
+
+输出结果
+4
+3
+5
+4.5
+3.1
+5.6
+Google
+Baidu
+Runoob
