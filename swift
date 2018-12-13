@@ -83,3 +83,13 @@ if myString != nil {
 
 输出结果
 Hello, Swift!
+
+
+
+Swift 3 版本使用的是 String.characters.count
+
+import Cocoa
+
+var varA   = "www.runoob.com"
+
+print( "\(varA), 长度为 \(varA.count)" )
