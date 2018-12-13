@@ -93,3 +93,40 @@ import Cocoa
 var varA   = "www.runoob.com"
 
 print( "\(varA), 长度为 \(varA.count)" )
+
+
+
+isEmpty
+
+判断字符串是否为空，返回布尔值
+
+hasPrefix(prefix: String)
+
+检查字符串是否拥有特定前缀
+
+hasSuffix(suffix: String)
+
+检查字符串是否拥有特定后缀。
+
+Int(String)
+
+转换字符串数字为整型。 实例:
+let myString: String = "256"
+let myInt: Int? = Int(myString)
+
+
+import Cocoa
+
+var varA:String = "Hello "
+let varB:Character = "G"
+
+varA.append( varB )
+
+print("varC  =  \(varA)")
+
+输出结果
+varC  =  Hello G
+
+
+
+
