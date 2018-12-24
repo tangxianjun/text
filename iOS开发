@@ -11,3 +11,16 @@
  
 工程属性文件info.plist调节产品属性
 目标与工程相对应，目标就是一个编译后的产品，
+
+iOS api
+cocoa touch层
+提供构建iOS 应用的一些基本系统服务（如多任务，触摸输入和推送通知等）和关键框架
+
+Media层
+提供了图形，音频，视频和AirPlay技术。
+
+Core Services
+提供了C楼KIT，HealthKit，HomeKit，应用购买，SQLite数据库和XML支持等技术。
+
+core os层
+提供一些低级功能。
