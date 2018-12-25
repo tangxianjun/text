@@ -24,3 +24,13 @@ Core Services
 
 core os层
 提供一些低级功能。
+
+12月25日
+控件类（继承UIControl）
+UIButton
+UIDatePicker
+UIPagContol
+UISegmentedControl
+UITextField
+UISlider
+UISwitch
