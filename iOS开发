@@ -34,3 +34,9 @@ UISegmentedControl
 UITextField
 UISlider
 UISwitch
+
+构建页面的方法
+1.故事版文件
+2.XIB文件
+3.纯代码实现
+工程文件Main.storyboard即故事版文件（本质为XML文件）
