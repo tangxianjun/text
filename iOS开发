@@ -20,7 +20,7 @@ Media层
 提供了图形，音频，视频和AirPlay技术。
 
 Core Services
-提供了C楼KIT，HealthKit，HomeKit，应用购买，SQLite数据库和XML支持等技术。
+提供了ClouKit，HealthKit，HomeKit，应用购买，SQLite数据库和XML支持等技术。
 
 core os层
 提供一些低级功能。
