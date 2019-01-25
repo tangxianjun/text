@@ -129,7 +129,7 @@ varC  =  Hello G
 
 
 
-
+2.5
 
 1月25日
 swif独特储存多个类型值的方法
@@ -154,7 +154,13 @@ let success = （） 讲值依次写在括号里。
 let me =  (name:value)
 me.name进行访问
 构建新的tuple  var （value,value） = me
-此时对value进行修改是无效的。当有的value不需要时可以用_代替。
+此时对value进行修改是不会影响之前tuple的值。当有的value不需要时可以用_代替。
+tuple类型为依次tuple元素的类型，当tuple的元素个数不相等是不能比较大小，两个tuple比较是以第一个不相等的元素大小为结果。最多只能将6个元素的tuple进行比较。
+swift不能直接对浮点数进行取余，需如下操作如 8.truncatingRemainder(dividingBy:2.5)
+不在支持自加 i++或++i
+可选类型(optiona)用于处理值可能为nil的情况
+let userinput：String? = "userinput"
+userInput ?? "A default userinput"当userInt为nil是输出A default userinput
 
 
 
