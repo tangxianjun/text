@@ -147,6 +147,23 @@ UInt表示非负数整型，但是尽量不要用，避免不必要的类型转�
 两种浮点类型，float，double类型，float精确到小数点后6位， double精确到小数点后15位。
 type(of:name)查看变量类型。
 可以将两个不同类型的值相加，但是不能讲两个不同类型的变量相加。
+doublen(name)并不是类型转换，而是重新生成了一个值。
+tupel打包多个类型的值
+let success = （） 讲值依次写在括号里。
+也可以给每个值命名，看上去更加直观。
+let me =  (name:value)
+me.name进行访问
+构建新的tuple  var （value,value） = me
+此时对value进行修改是无效的。当有的value不需要时可以用_代替。
+
+
+
+
+
+
+
+
+
 
 
 
