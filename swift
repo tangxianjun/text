@@ -130,3 +130,30 @@ varC  =  Hello G
 
 
 
+
+1月25日
+swif独特储存多个类型值的方法
+var  me = ("hello",3,true)
+通过检索访问
+me.o
+me.1
+me.2
+当一个函数需要返回多个值时，使用上面这个方法。
+type inference  swift编译器能够根据赋值推断变量类型。
+type annotation 如  var a:Int  var b:String  进行变量类型的声明。
+Int.min Int类型表示的最小值   Int.max Int类型表示的最大值  0x  16进制前缀  0o   8进制前缀   0b  2进制前缀   千分位可以用_隔开
+UInt表示非负数整型，但是尽量不要用，避免不必要的类型转换问题。
+
+两种浮点类型，float，double类型，float精确到小数点后6位， double精确到小数点后15位。
+type(of:name)查看变量类型。
+可以将两个不同类型的值相加，但是不能讲两个不同类型的变量相加。
+
+
+
+
+
+
+
+
+
+
