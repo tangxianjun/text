@@ -166,6 +166,28 @@ userInput ?? "A default userinput"当userInt为nil是输出A default userinput
 昨天算是解决了我一直以来对可选类型的不理解。
 1…3表示闭区间，1..<3表示左闭右开。
 switch中fallthrough关键字会在执行完本次语句后，还会执行一次下一次的语句。别切switch里面可以用区间。
+for 循环接受体 in 循环体{}
+遍历字符串  for i in Str.characters{}
+APP里包含死循环，否则代码执行结束即退出，即闪退。
+repeat-while相当于do while循环。
+repeat { code }while
+函数  func (参数，可传递多个参数)->(函数返回值类型)   可以无参数无返回值
+返回值必须与参数类型相同！！！！
+定义一个可选类型  var a : Optional<值的类型>  使用可选类型时需要用!进行解包如：a!  可选类型可以避免一些常见的错误，更为安全。
+swift中nil是一个特定类型的空值，不是指针指向空。
+
+断言  assert有利于帮助开发者debug 只有为true才能继续。
+
+
+
+
+
+
+
+
+
+
+
 
 
 
