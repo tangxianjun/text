@@ -162,6 +162,12 @@ swift不能直接对浮点数进行取余，需如下操作如 8.truncatingRemai
 let userinput：String? = "userinput"
 userInput ?? "A default userinput"当userInt为nil是输出A default userinput
 
+1月26日
+昨天算是解决了我一直以来对可选类型的不理解。
+1…3表示闭区间，1..<3表示左闭右开。
+switch中fallthrough关键字会在执行完本次语句后，还会执行一次下一次的语句。别切switch里面可以用区间。
+
+
 
 
 
