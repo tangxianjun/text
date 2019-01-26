@@ -178,6 +178,9 @@ swift中nil是一个特定类型的空值，不是指针指向空。
 
 断言  assert有利于帮助开发者debug 只有为true才能继续。
 
+Str.isEmpty可以用来判断字符串是否为空。
+
+
 
 
 
