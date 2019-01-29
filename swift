@@ -162,7 +162,7 @@ swift不能直接对浮点数进行取余，需如下操作如 8.truncatingRemai
 let userinput：String? = "userinput"
 userInput ?? "A default userinput"当userInt为nil是输出A default userinput
 
-1月26日
+1月26日                      //  Str代表自己已经定义好的字符串变量
 昨天算是解决了我一直以来对可选类型的不理解。
 1…3表示闭区间，1..<3表示左闭右开。
 switch中fallthrough关键字会在执行完本次语句后，还会执行一次下一次的语句。别切switch里面可以用区间。
@@ -179,6 +179,35 @@ swift中nil是一个特定类型的空值，不是指针指向空。
 断言  assert有利于帮助开发者debug 只有为true才能继续。
 
 Str.isEmpty可以用来判断字符串是否为空。
+
+
+1月27日                       //  Str代表自己已经定义好的字符串变量
+字符串索引   var Strc = Str.index(Str.startIndex,offsetBy:数字)
+字符串截取   Str.substring(to:Strc)          //  从哪个位置到哪个位置
+           Str.substring(from:Strc)        //  从哪个位置开始截取
+转换成oc的字符串截取方式
+(Str as NSString).substring(to:数字，表示截取到第几位)
+(Str as NSString).substring(from:数字)
+(Str as NSString).substring(with:NSRange.init 
+                   (locatio:数字，表示开始位置,length:数字,表示结束位置))  
+字符串的替换
+Str.replaceingOccurrences(of:"不要的字符",with:"新替换上的字符")
+字符串的插入
+Str.insert("需要插入的字符",at:Str.endIndex)       //在字符串的末尾插入
+Str.insert("需要插入的字符",at:Str.startIndex)       //在字符串的开头插入
+Str.insert("需要插入的字符",at:Strc)       //在字符串的某个位置插入    at：索引
+字符串的删除
+Str.remove(at:Strc)                         //删除某个位置上的字符     
+Str.removeAll()                              //   删除全部字符串
+字符串的大小写转换
+Str.uppercased()                             //  全部转化为大写
+Str.lowercased()                          //  全部转化为小写
+字符串的首字母大写 
+Str.capitalized
+检查字符串的前缀和后缀
+
+
+
 
 
 
