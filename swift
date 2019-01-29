@@ -205,7 +205,25 @@ Str.lowercased()                          //  全部转化为小写
 字符串的首字母大写 
 Str.capitalized
 检查字符串的前缀和后缀
+Str.hasPrefix("字符")                     //      检查字符串荐椎是否含有某个字符
+Str.hasSuffix("字符")                   //      检查字符串后缀是否含有某个字符
 
+
+
+1月29日
+swift数组
+var array:[数组类型]           //   数组的类型是明确的，只能存放该类型的值
+array = [数组元素]                   //  var let 分别定义可变数组和不可变数字
+维数组里添加元素
+array.append(元素)
+根据索引的位置插入元素
+array.insert(元素,at:数字)       //   在某个位置添加元素
+array.removelast(数字，删除元素个数)               //   从末尾删除多少个元素
+array.removeFirst(数字)                     //   从开始删除多少个元素，如果数字不指定则删除一个
+array.remove(at:数字)                //   根据元素下表删除元素
+array.removeSubrange(1..3)            //   删除某个范围内的元素
+array.removeAll()              //   删除所有元素
+array[数字] = 值                         //  修改某个元素的值
 
 
 
