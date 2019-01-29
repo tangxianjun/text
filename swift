@@ -218,13 +218,39 @@ array = [数组元素]                   //  var let 分别定义可变数组和
 array.append(元素)
 根据索引的位置插入元素
 array.insert(元素,at:数字)       //   在某个位置添加元素
-array.removelast(数字，删除元素个数)               //   从末尾删除多少个元素
+array.removeLast(数字，删除元素个数)               //   从末尾删除多少个元素
 array.removeFirst(数字)                     //   从开始删除多少个元素，如果数字不指定则删除一个
 array.remove(at:数字)                //   根据元素下表删除元素
-array.removeSubrange(1..3)            //   删除某个范围内的元素
+array.removeSubrange(1...3)            //   删除某个范围内的元素
 array.removeAll()              //   删除所有元素
 array[数字] = 值                         //  修改某个元素的值
+array[1...3] = [  ,  ,  ]           //    修改多个元素的值
 
+元素之间有一定的联系可以定义元组
+如   let yz = (name:anna,age:16,height:170)   _下划线表示一个忽略值
+  let (name,age,height) = (anne,16,170)
+name     //   直接访问
+
+字典(Dictionary)
+var dict : [String:String]          // 第一个类型为健类型，第二个类型为值类型
+dict = ["name":"jack","age":"18","height":"170"]
+字典的拼接
+for (key,value) in dict2{
+dict[key] = value
+}
+字典的遍历
+for (key,value) in dict{
+print("\(key) = \(value)")
+}
+dict[key] = value                  //  字典中键值对的修改，如果健存在就是修改，不存在就是添加
+dict.updataValue(value,forKey:"key")
+dict.remove(forKey:key)                // 键值对的删除
+
+数组中放入不同类型的元素
+var array:[Any]
+array = []
+字典中
+var dict[Any]
 
 
 
