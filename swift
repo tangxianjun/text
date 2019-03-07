@@ -253,7 +253,70 @@ array = []
 var dict[Any]
 
 
+3月5日
+enum 定义枚举
+enum name{
+case value
+case value
+}
+通过switch来匹配枚举值
+switch name {
+ case .name:
+ 
+}
 
+闭包   一段代码块
+定义闭包
+let name {
+}
+ 
+
+3月6日
+一般的闭包定义方式
+let name:(参数类型)->(返回值类型)={
+(参数名以及参数类型)->  in
+}
+ // 闭包可以隐士返回
+ 
+ 类的定义
+ class name{
+ var name:String = ".."
+}
+let p = name()  // 实例化类
+实例化之后才能使用类
+
+结构体是值类型，类是引用类型  结构体改变值时原始值不会改变，引用类型则会改变
+结构体的定义
+struct name{
+ var name:String = ".."
+}
+let p = name()   // 实例化结构体
+
+swift能继承父类，而结构体不行  引用类型为指针传递
+
+
+3月7日
+储存属性就是储存在对象实例中的常量和变量
+延迟属性就是在使用的时候才进行初始化
+lazy关键字
+
+计算数值型
+get用来取值，封装一个取值的过程
+set用来取值，封装一个设值得过程
+
+class Square{
+    var width:Double = 0.0
+    var girth:Double{
+        get{
+           return width * 4
+        }
+        set(newGirth){
+           width = newGirth
+        }
+   }
+}
+let q = Square()
+q.width = 10.0
 
 
 
