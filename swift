@@ -319,10 +319,42 @@ let q = Square()
 q.width = 10.0
 
 
+3月8日
+类型属性用关键字class修饰的属性
+class修饰的类型属性只能是计算属性，不能是储存属性
 
+方法
+类中的方法使用
+class num1 {
+   func count(num1:Int,num2:Int)->Int{
+   return num1 + num2 
+  }
+}
+let num = num1()
+num.count(num1:50,num2:50)
 
+// 枚举中方法的使用
+enum num2 {
+   caseL
+   func count2(num1:Int,num2:Int)->Int{
+       return num1 + num2
+   }
+}
+let n = num2.L
+n.count2(num1:50,num2:50)
 
+// 结构体中方法的使用
+struct  num3{
+    func count3(num1:Int,num2:Int)->Int{
+       return num1 + num2
+   }
+}
+let c = num3()
+c.count3(num1:50,num2:50)
 
+外部参数名
+func ci(Jack age1:Int,Allen age2:Int)
+Jack,Allen为外部参数，age为内部参数，外部参数可以忽略
 
 
 
