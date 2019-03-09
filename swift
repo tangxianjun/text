@@ -357,14 +357,47 @@ func ci(Jack age1:Int,Allen age2:Int)
 Jack,Allen为外部参数，age为内部参数，外部参数可以忽略
 
 
+3月9日
+类的继承
+class Father{
+   var age = 18
+   var height = 170.0
+   func result(){ 
+       print("我是父类的方法")
+   }
+}
+// 子类继承父类
+class Son:Father{
+   var age1 = 15  // 名称不能与父类重复
+}
+//   只能一级一级的继承 不能一个子类继承多个父类
 
+方法的重写 当父类的方法不能满足子类的时候，需要子类自己取扩充，即使用override关键字对父类方法进性重写
+class Person{
+    var name : String = ""
+    var age : Int?
+    
+    // 构造函数 初始化
+    init(name:String,age：Int){
+         self.name = name
+         self.age = age 
+         print(self.age!,self.name)  // age为可选类型，需要解包、
+         
+    }
+}
+class son:Person{
+     var height : float?
+     override init(name:String,age:Int){
+         height = 175.0
+         
+         super.init(name:name,age: age)   // 需要再次调用父类的init方法，否则视为自己重新写的方法并不是父类的
+     }
+}
 
+let s = son(name:"Jack",age:15)  //  假设还需要身高的数据，即父类方法无法满足子类要求
+s.height
 
-
-
-
-
-
+方法的重载:快速为方法添加新的属性，属性可以通过外部传入
 
 
 
