@@ -399,7 +399,17 @@ s.height
 
 方法的重载:快速为方法添加新的属性，属性可以通过外部传入
 
-
+class student:Person{
+    var sex : String?
+    
+    init(name:String,age:Int,sex:String){
+          self.sex =sex
+          
+          super.init(name:name,age)
+          }
+}
+let s1 = student(name:"Anna",age:18,sex: "女")
+s1.sex
 
 
 
