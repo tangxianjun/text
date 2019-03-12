@@ -418,6 +418,31 @@ swift中的构造器无返回值。
 
 3月12日
 //  隐士构造方法，如果在类中没有写构造方法，系统会默认生成一个构造方法。
+class cat {
+   var age = 0
+
+}
+let c = cat()
+
+// 指定构造方法
+class Person{
+  var name : String = ""  // 必须初始化，或者在构造函数初始化
+  //  默认不带参数的构造方法
+  init(){   
+   name = "Allen"
+  }
+  init(namne:String){
+    self.name = name
+  }
+   //  可选参数，可选类型
+   var age = Int?
+   init(name:String,age:Int){
+      slef.name = name 
+      self.age! = age
+   }
+}
+
+//遍历构造函数
 
 
 
