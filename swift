@@ -442,9 +442,20 @@ class Person{
    }
 }
 
-//遍历构造函数
-
-
+//便利构造函数（不能被重写）
+即满足条件爱会实例化，避免不必要的内存开销
+class Person1{
+    var name : String = ""
+    init(name:String){
+    //指定构造器
+         self.name = name
+    }
+    
+    convenience init(name:String,height:Int){
+        //  便利构造器，不需要全部初始化成员变量
+        self.init(name:name)
+    }
+}
 
 
 
