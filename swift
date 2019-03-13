@@ -424,6 +424,8 @@ class cat {
 }
 let c = cat()
 
+
+3月13日
 // 指定构造方法
 class Person{
   var name : String = ""  // 必须初始化，或者在构造函数初始化
