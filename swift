@@ -460,6 +460,24 @@ class Person1{
 }
 
 
+3月15日
+协议声明
+protocol pro{
+    // 协议的属性或者方法
+    //  只需声明协议
+    func text()
+}
+
+class Person:pro{
+   // 遵循协议必须实现协议的方法或者属性
+   func text(){
+      code
+   }
+}
+let p = Person()
+p.text()
+
+结构体和枚举都能遵循协议
 
 
 
