@@ -1,0 +1,19 @@
+cURL(Client URL Library Functions)
+cURL的概念:curl is a command line tool for transferring data with URL syntax,即使用URL语法传输数据的命令行工具。（请求资源的工具）
+通过cURL获取网站上个各种资源。如网页，图片，数据，脚本。
+
+ cURL的使用场景
+ 1.网页资源
+ 2.WebService数据接口资源
+ 3.FTP服务器里面的文件资源
+ 4.其他资源
+ 
+ 确认PHP是否支持cURL
+ -windows 
+ php - i
+ 
+-linux
+php -i | grep cURL
+
+添加cURL的支持
+
